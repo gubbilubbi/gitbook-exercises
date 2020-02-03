@@ -262,7 +262,7 @@ When you have everything in place you should define a function `eval/1`, that ta
 seq = [{:match, {:var, :x}, {:atm,:a}},
         {:match, {:var, :y}, {:cons, {:var, :x}, {:atm, :b}}},
         {:match, {:cons, :ignore, {:var, :z}}, {:var, :y}},
-        {:var, z}]
+        {:var, :z}]
 
 Eager.eval(seq)
 ```
